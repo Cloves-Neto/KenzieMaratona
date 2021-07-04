@@ -1,0 +1,240 @@
+/*
+Tema: Start sua carreira dev
+Tema url:  https//www.startsuacarreira.com.br
+Autor: Cloves Rodrigues
+Descrição: Curso intensivo "Maratona de Programação Web- Do 0 ao código, ministrada por Kenzie Acaddemy.
+Versão: 1.0
+
+----------------------------------------------------
+ESTRUTURAÇÃO_BASE
+----------------------------------------------------
+
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** MAIN
+**** FOOTER
+**** PÁGINA_INICIAL
+**** @MEDIA
+ */
+
+/* DECLARAÇÃO DE VARIÁVEIS */
+:root
+    {
+        --color-1: rgb(58, 3, 110);
+        --color-2: rgb(163, 32, 141);
+    }
+/* ESTILOS GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.container
+    {
+        padding: 30px;
+    }
+.container--colum
+    {
+
+    }
+section h2, h2
+    {
+        font-size:1.3rem;
+        color: var(--color-1);
+        margin-bottom: 10px;
+    }
+p,li,strong,h3
+    {
+        font-size: 14px;
+        color: var(--color-2);
+        line-height: 22px;
+    }
+li
+    {
+        margin-bottom: 10px;
+    }
+h3  
+    {
+        font-size: 1.2rem;
+    }
+.informacaoescontato__descrição__li
+    {
+        color: var(--color-2);
+    }
+section
+{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed var(--color-1);
+}
+
+/* BODY */
+    body
+    {
+    }
+/* MAIN */
+    main
+    {
+    }
+/* PÁGINA_INICIAL */
+main.row
+    {
+
+    }
+main .colum
+    {
+    
+    }
+/* ---Coluna Esquerda---*/
+main .colum--esquerda
+    {
+        background-color: var(--color-1);
+    }
+.informacaoescontato
+    {
+    
+    }
+.informacaoescontato__imagem 
+    {    
+        text-align: center;
+    }
+.informacaoescontato__imagem figure img
+    {
+        width: 100%;
+        max-width: 160px;
+        border: 3px solid var(--color-2);
+        border-radius: 100%;
+    }
+.informacaoescontato__imagem figure .hide
+    {
+        opacity: 0;
+        display: none;
+    }
+.informacaoescontato__descrição
+    {
+        text-align: center;
+        color: var(--color-2);
+
+    }
+.informacaoescontato__descrição h1
+    {
+        font-size: 1.5rem;
+    }
+.informacaoescontato__descrição h2
+    {
+        font-size: 14px;
+        font-weight: normal;
+    }
+.informacaoescontato__descrição ul
+    {
+        margin-top: 20px;
+        
+    }
+.informacaoescontato__descrição ul li
+    {
+        margin-bottom: 10px;
+    }
+.informacaoescontato__descrição ul li a
+    {
+        font-size: 14px;
+        color: inherit;
+    }
+/* ---Coluna Direita---*/
+main .colum--direita
+    {
+        background-color: white;
+        
+    }
+main.column--direita section
+    {
+
+    }
+.informacaoPortifolio
+    {
+
+    }
+.informacaoPortifolio__perfil
+    {
+
+    }
+.informacaoPortifolio__perfil h2
+    {
+
+    }
+.informacaoPortifolio__perfil p
+    {
+
+    }
+.informacaoPortifolio__habilidades
+    {
+
+    }
+.informacaoPortifolio__habilidades h2
+    {
+
+    }
+.informacaoPortifolio__habilidades ul
+    {
+
+    }
+.informacaoPortifolio__habilidades ul li 
+    {
+        
+    }
+.informacaoPortifolio__formacao
+    {
+
+    }
+.informacaoPortifolio__formacao h2
+    {
+        
+    }
+.informacaoPortifolio__formacao ul
+    {
+
+    }
+.informacaoPortifolio__formacao ul li 
+    {
+
+    }
+.informacaoPortifolio__experiencia
+    {
+
+    }
+
+/* FOOTER */
+
+footer
+    {
+
+    }
+.redesSociais
+    {
+
+    }
+.redesSociais__lista
+    {
+
+    }
+.redesSociais__lista
+    {
+
+    }
+.redesSociais__lista__item
+    {
+
+    }
+.redesSociais__link
+    {
+
+    }
+.redesSociais__img
+    {
+    
+    }

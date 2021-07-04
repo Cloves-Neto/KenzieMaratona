@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>Portifólio_MaratonaKenzie</title>
 </head>
 <body>
@@ -14,79 +14,90 @@
         <div class="row">
 
             <!-- Conteúdo lado esquerdo -->
-            <div class="column column--esquerda">
+            <div class="colum colum--esquerda">
 
                 <div class="informacaoescontato__imagem">
 
-                    <figure>
-                        <img src="./assets/img/freela.jpeg" alt="perfil_img">
-                        <figcaption>imagem de perfil</figcaption>
-                    </figure>
+                    <div class="container container--colum">
 
-                </div>
-                <div class="informacaoescontato__descrição">
-                    <h1>Cloves Rodrigues</h1>
-                    <h2>Desenvolvedor Web</h2>
+                        <figure>
+                            <img src="./assets/img/freela.jpeg" alt="perfil_img">
+                            <figcaption class="hide">imagem de perfil</figcaption>
+                        </figure>
 
-                    <ul>
-                        <li>
-                            <a href="mailto:exemplo@gmail.com">exemplo@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="tel:11985858585">(11)985858585</a>
-                        </li>
-                        <li>
-                            <a href="#">Av. local ficiticio, 394 - Narnia</a>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="informacaoescontato__descrição">
+                            <h1>Cloves Rodrigues</h1>
+                            <h2>Desenvolvedor Web</h2>
+
+                            <ul>
+                                <li class="informacaoescontato__descrição__li">
+                                    <a href="mailto:exemplo@gmail.com">exemplo@gmail.com</a>
+                                </li>
+                                <li  class="informacaoescontato__descrição__li">
+                                    <a href="tel:11985858585">(11)985858585</a>
+                                </li>
+                                <li  class="informacaoescontato__descrição__li">
+                                    <a href="#">Av. local fictício, 394 - Narnia</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>    
 
             </div>
             <!-- Conteúdo lado direito -->
-            <div class="column column--direita">
-                    <!-- Conteúdo Perfil -->
-                <section class="informacaoPortifolio__perfil">
-                    <h2>Perfil Profissional</h2>
-                    <p>Lorem Ipsum dolor sit consectetur.</p>
-                </section>
-                    <!-- Conteúdo Habilidades-->
-                <section class="informacaoPortifolio__habilidades">
-                    
-                    <h2>Habilidades</h2>
-                    <ul>
-                        <li>Html 5</li>
-                        <li>Css 3</li>
-                        <li>JavaScript es6</li>
-                        <li>React Js</li>
-                        <li>Python</li>
-                        
-                    </ul>
+            <div class="colum colum--direita">
 
-                </section>
-                    <!-- Conteúdo Formação -->
-                <section class="informacaoPortifolio__formacao">
+                <div class="container container--colum">
 
-                    <h2>Cursos</h2>
-                    
-                    <ul>
+                            <!-- Conteúdo Perfil -->
+                        <section class="informacaoPortifolio__perfil">
+                            <h2>Perfil Profissional</h2>
+                            <p>Lorem Ipsum dolor sit consectetur.</p>
+                        </section>
+                            <!-- Conteúdo Habilidades-->
+                        <section class="informacaoPortifolio__habilidades">
+                            
+                            <h2>Habilidades</h2>
+                            <ul>
+                                <li>Html 5</li>
+                                <li>Css 3</li>
+                                <li>JavaScript es6</li>
+                                <li>React Js</li>
+                                <li>Python</li>
+                                
+                            </ul>
 
-                        <li>Engenharia da Computação-Graduação(FMU)</li>
+                        </section>
+                            <!-- Conteúdo Formação -->
+                        <section class="informacaoPortifolio__formacao">
 
-                        <li>Web Development(Udemy)</li>
+                            <h2>Cursos</h2>
+                            
+                            <ul>
 
-                        <li>ReactJs(Bootcamp Localiza - ReactJs)</li>
+                                <li>Engenharia da Computação-Graduação(FMU)</li>
 
-                        <li>Maratona do Zero ao Código(Kenzie)</li>
+                                <li>Web Development(Udemy)</li>
 
-                    </ul>
+                                <li>ReactJs(Bootcamp Localiza - ReactJs)</li>
 
-                </section>
-                    <!-- Conteúdo Experiências -->
-                <section class="informacaoPortifolio__formacao">
-                    <h3>Titulo do Cargo</h3>
-                    <strong>Nome da empresa - brasil</strong>
-                    <p>pPeríodo de experiência na empresa</p>
-                </section>
+                                <li>Maratona do Zero ao Código(Kenzie)</li>
+
+                            </ul>
+
+                        </section>
+                            <!-- Conteúdo Experiências -->
+                        <section class="informacaoPortifolio__experiencia">
+                            <h2>Experiências</h2>
+                            <h3>Titulo do Cargo</h3>
+                            <strong>Nome da empresa - brasil</strong>
+                            <p>Período de experiência na empresa</p>
+                        </section>
+
+                </div>
 
             </div>
 
@@ -100,26 +111,26 @@
             <ul class="redesSociais__lista">
                 <!-- github -->
                 <li class="redesSociais__lista__item">
-                    <a href="#">
-                        <img src="./assets/img/redes/github.png" alt="github">
+                    <a  class="redesSociais__link" href="#">
+                        <img class="redesSociais__img" src="./assets/img/redes/github.png" alt="github">
                     </a>
                 </li>
                 <!-- instagram -->
                 <li class="redesSociais__lista__item">
-                    <a href="#">
-                        <img src="./assets/img/redes/insta.png" alt="instagram">
+                    <a class="redesSociais__link" href="#">
+                        <img class="redesSociais__img" src="./assets/img/redes/insta.png" alt="instagram">
                     </a>
                 </li>
                 <!-- linkedin -->
                 <li class="redesSociais__lista__item">
-                    <a href="#">
-                        <img src="./assets/img/redes/linkedin.png" alt="linkedin">
+                    <a class="redesSociais__link" href="#">
+                        <img class="redesSociais__img" src="./assets/img/redes/linkedin.png" alt="linkedin">
                     </a>
                 </li>
                 <!-- email -->
                 <li class="redesSociais__lista__item">
-                    <a href="#">
-                        <img src="./assets/img/redes/mail.png" alt="mail">
+                    <a class="redesSociais__link" href="#">
+                        <img class="redesSociais__img" src="./assets/img/redes/mail.png" alt="mail">
                     </a>
                 </li>
             </ul>
