@@ -24,6 +24,8 @@ ESTRUTURAÇÃO_BASE
     {
         --color-1: rgb(58, 3, 110);
         --color-2: rgb(163, 32, 141);
+        --color-3: rgb(86, 7, 160);
+
         /* Darkmodecolor */
         --dark-1: rgb(86, 7, 160);
         --dark-2: rgb(33, 2, 48);
@@ -149,7 +151,7 @@ section
 main .colum--esquerda
     {
         background-color: var(--color-2);
-        border-bottom: 5px solid var(--color-1);
+        border-bottom: 5px solid var(--color-3);
     }
 .informacaoescontato__imagem 
     {    
@@ -160,7 +162,7 @@ main .colum--esquerda
     {
         width: 100%;
         max-width: 160px;
-        border: 5px solid  var(--color-1); 
+        border: 5px solid  var(--color-3); 
         border-radius: 100%;
     }
 .informacaoescontato__imagem figure .hide
@@ -171,7 +173,7 @@ main .colum--esquerda
 .informacaoescontato__descrição
     {
         text-align: center;
-        color: var(--color-1); 
+        color: var(--color-3); 
     }
 .informacaoescontato__descrição h1
     {
@@ -181,7 +183,7 @@ main .colum--esquerda
     {
         font-size: 14px;
         font-weight: normal;
-        color: var(--color-1); 
+        color: var(--color-3); 
     }
 .informacaoescontato__descrição ul
     {
@@ -190,7 +192,7 @@ main .colum--esquerda
 .informacaoescontato__descrição ul li
     {
         margin-bottom: 10px;
-        color: var(--color-1);
+        color: var(--color-3);
     }
 .informacaoescontato__descrição ul li a
     {
