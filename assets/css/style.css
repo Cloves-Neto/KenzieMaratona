@@ -24,6 +24,10 @@ ESTRUTURAÇÃO_BASE
     {
         --color-1: rgb(58, 3, 110);
         --color-2: rgb(163, 32, 141);
+        /* Darkmodecolor */
+        --dark-1: black;
+        --dark-2: rgb(33, 2, 48);
+        --dark-3: rgb(163, 32, 141);
     }
 /* ESTILOS GERAIS */
 *{
@@ -37,11 +41,9 @@ ESTRUTURAÇÃO_BASE
 }
 .container
     {
-        padding: 30px;
-    }
-.container--colum
-    {
-
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
     }
 section h2, h2
     {
@@ -73,17 +75,82 @@ section
     margin-bottom: 20px;
     border-bottom: 2px dashed var(--color-1);
 }
+.informacaoescontato__trocarmodo{
+}
+.informacaoescontato__trocarmodo label{
+    width:50px;
+    height: 25px;
+    display: block;
+    background-color: var(--color-1);
+    border-radius: 22px;
+    cursor: pointer;
+    padding:3px;
+    border: white solid 1px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.informacaoescontato__trocarmodo label span{
+    width:18px;
+    display: inline-block;
+    height: 18px;
+    background-color: var(--color-2);
+    border-radius: 100%;
+    transition: 0.5s;
+}
+#darkmode{
+    display:none;
+}
 
 /* BODY */
     body
     {
+        background-color: var(--color-2);
     }
-/* MAIN */
-    main
+    input:checked ~ main h2,input:checked ~ main p, input:checked ~ main li,
+    input:checked ~ main h3, input:checked ~main strong {
+        color: var(--dark-2)
+    }
+    input:checked ~ main{
+        background-color: var(--dark-2);
+    }
+    input:checked ~ main .colum--esquerda{
+        background-color: var(--dark-2);
+    }
     {
+        color: var(--dark-2);
     }
+    input:checked ~ main .colum--direita{
+        background-color: var(--dark-3);
+    }
+    input:checked ~ footer {
+        background-color: var(--dark-1);
+    }
+    input:checked ~ main .informacaoescontato__imagem figure img{
+        border: solid 5px var(--dark-3);
+    }
+    input:checked ~ main .informacaoescontato__descrição,
+    input:checked ~ main .informacaoescontato__descrição h2,
+    input:checked ~ main .informacaoescontato__descrição ul li{
+        color: var(--dark-3)
+    }
+    input:checked ~ main .informacaoescontato__trocarmodo label{
+    background-color: var(--color-2);
+    
+    }
+    input:checked ~ main .informacaoescontato__trocarmodo label span{
+        background-color: var(--color-1);
+        transform: translateX(25px);
+    }
+    
+
+
+/* MAIN */
+
 /* PÁGINA_INICIAL */
-main.row
+main .row
     {
 
     }
@@ -94,7 +161,8 @@ main .colum
 /* ---Coluna Esquerda---*/
 main .colum--esquerda
     {
-        background-color: var(--color-1);
+        background-color: var(--color-2);
+        border-bottom: 5px solid var(--color-1);
     }
 .informacaoescontato
     {
@@ -103,12 +171,13 @@ main .colum--esquerda
 .informacaoescontato__imagem 
     {    
         text-align: center;
+        padding:30px;
     }
 .informacaoescontato__imagem figure img
     {
         width: 100%;
         max-width: 160px;
-        border: 3px solid var(--color-2);
+        border: 5px solid  var(--color-1); 
         border-radius: 100%;
     }
 .informacaoescontato__imagem figure .hide
@@ -119,8 +188,7 @@ main .colum--esquerda
 .informacaoescontato__descrição
     {
         text-align: center;
-        color: var(--color-2);
-
+        color: var(--color-1); 
     }
 .informacaoescontato__descrição h1
     {
@@ -130,15 +198,16 @@ main .colum--esquerda
     {
         font-size: 14px;
         font-weight: normal;
+        color: var(--color-1); 
     }
 .informacaoescontato__descrição ul
     {
         margin-top: 20px;
-        
     }
 .informacaoescontato__descrição ul li
     {
         margin-bottom: 10px;
+        color: var(--color-1);
     }
 .informacaoescontato__descrição ul li a
     {
@@ -149,7 +218,7 @@ main .colum--esquerda
 main .colum--direita
     {
         background-color: white;
-        
+        text-align: center;
     }
 main.column--direita section
     {
@@ -205,14 +274,19 @@ main.column--direita section
     }
 .informacaoPortifolio__experiencia
     {
-
+        border-bottom: none;
     }
 
 /* FOOTER */
 
 footer
     {
-
+        background-color: var(--color-1);
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
     }
 .redesSociais
     {
@@ -222,13 +296,10 @@ footer
     {
 
     }
-.redesSociais__lista
-    {
-
-    }
 .redesSociais__lista__item
     {
-
+        display: inline-block;
+        margin: 0 5px; 
     }
 .redesSociais__link
     {
@@ -236,5 +307,22 @@ footer
     }
 .redesSociais__img
     {
-    
+        width:100%;
+        max-width: 65px;
     }
+
+/* @MEDIAQUERY */
+@media screen and (min-width:768px ){
+    main .row{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    main .colum--esquerda{
+        flex-basis: 34%;
+        border-right: solid 3px var(--color-1);
+        border-bottom: none;
+    }
+    main .colum--direita{
+        flex-basis: 66%;
+    }
+}

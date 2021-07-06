@@ -7,102 +7,103 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>Portifólio_MaratonaKenzie</title>
 </head>
+
+
 <body>
+    <input type="checkbox" name="dark_mode" id="darkmode">
     <!-- Conteúdo Principal -->
     <main>
+        <div class="container">
+            <div class="row">   
+                    <!-- Conteúdo lado esquerdo -->
+                    <div class="colum colum--esquerda">
 
-        <div class="row">
+                                <div class="informacaoescontato__imagem">
+                                    <figure>
+                                        <img src="./assets/img/freela.jpeg" alt="perfil_img">
+                                        <figcaption class="hide">imagem de perfil</figcaption>
+                                    </figure>
+                                </div>
 
-            <!-- Conteúdo lado esquerdo -->
-            <div class="colum colum--esquerda">
+                                <div class="informacaoescontato__descrição">
+                                    <h1>Cloves Rodrigues</h1>
+                                    <h2>Desenvolvedor Web</h2>
 
-                <div class="informacaoescontato__imagem">
+                                    <ul>
+                                        <li class="informacaoescontato__descrição__li">
+                                            <a href="mailto:exemplo@gmail.com">exemplo@gmail.com</a>
+                                        </li>
+                                        <li  class="informacaoescontato__descrição__li">
+                                            <a href="tel:11985858585">(11)985858585</a>
+                                        </li>
+                                        <li  class="informacaoescontato__descrição__li">
+                                            <a href="#">Av. local fictício, 394 - Narnia</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="informacaoescontato__trocarmodo">
+                                    <label for="darkmode">
+                                        <span></span>
+                                    </label>
+                                </div>
 
-                    <div class="container container--colum">
+                    </div>   
+                    <!-- Conteúdo lado direito -->
+                    <div class="colum colum--direita">
 
-                        <figure>
-                            <img src="./assets/img/freela.jpeg" alt="perfil_img">
-                            <figcaption class="hide">imagem de perfil</figcaption>
-                        </figure>
+                        <div class="container container--colum">
 
-                        <div class="informacaoescontato__descrição">
-                            <h1>Cloves Rodrigues</h1>
-                            <h2>Desenvolvedor Web</h2>
+                                    <!-- Conteúdo Perfil -->
+                                <section class="informacaoPortifolio__perfil">
+                                    <h2>Perfil Profissional</h2>
+                                    <p>Lorem Ipsum dolor sit consectetur.</p>
+                                </section>
+                                    <!-- Conteúdo Habilidades-->
+                                <section class="informacaoPortifolio__habilidades">
+                                    
+                                    <h2>Habilidades</h2>
+                                    <ul>
+                                        <li>Html 5</li>
+                                        <li>Css 3</li>
+                                        <li>JavaScript es6</li>
+                                        <li>React Js</li>
+                                        <li>Python</li>
+                                        
+                                    </ul>
 
-                            <ul>
-                                <li class="informacaoescontato__descrição__li">
-                                    <a href="mailto:exemplo@gmail.com">exemplo@gmail.com</a>
-                                </li>
-                                <li  class="informacaoescontato__descrição__li">
-                                    <a href="tel:11985858585">(11)985858585</a>
-                                </li>
-                                <li  class="informacaoescontato__descrição__li">
-                                    <a href="#">Av. local fictício, 394 - Narnia</a>
-                                </li>
-                            </ul>
+                                </section>
+                                    <!-- Conteúdo Formação -->
+                                <section class="informacaoPortifolio__formacao">
+
+                                    <h2>Cursos</h2>
+                                    
+                                    <ul>
+
+                                        <li>Engenharia da Computação-Graduação(FMU)</li>
+
+                                        <li>Web Development(Udemy)</li>
+
+                                        <li>ReactJs(Bootcamp Localiza - ReactJs)</li>
+
+                                        <li>Maratona do Zero ao Código(Kenzie)</li>
+
+                                    </ul>
+
+                                </section>
+                                    <!-- Conteúdo Experiências -->
+                                <section class="informacaoPortifolio__experiencia">
+                                    <h2>Experiências</h2>
+                                    <h3>Titulo do Cargo</h3>
+                                    <strong>Nome da empresa - brasil</strong>
+                                    <p>Período de experiência na empresa</p>
+                                </section>
+
                         </div>
 
                     </div>
-
-                </div>    
-
             </div>
-            <!-- Conteúdo lado direito -->
-            <div class="colum colum--direita">
-
-                <div class="container container--colum">
-
-                            <!-- Conteúdo Perfil -->
-                        <section class="informacaoPortifolio__perfil">
-                            <h2>Perfil Profissional</h2>
-                            <p>Lorem Ipsum dolor sit consectetur.</p>
-                        </section>
-                            <!-- Conteúdo Habilidades-->
-                        <section class="informacaoPortifolio__habilidades">
-                            
-                            <h2>Habilidades</h2>
-                            <ul>
-                                <li>Html 5</li>
-                                <li>Css 3</li>
-                                <li>JavaScript es6</li>
-                                <li>React Js</li>
-                                <li>Python</li>
-                                
-                            </ul>
-
-                        </section>
-                            <!-- Conteúdo Formação -->
-                        <section class="informacaoPortifolio__formacao">
-
-                            <h2>Cursos</h2>
-                            
-                            <ul>
-
-                                <li>Engenharia da Computação-Graduação(FMU)</li>
-
-                                <li>Web Development(Udemy)</li>
-
-                                <li>ReactJs(Bootcamp Localiza - ReactJs)</li>
-
-                                <li>Maratona do Zero ao Código(Kenzie)</li>
-
-                            </ul>
-
-                        </section>
-                            <!-- Conteúdo Experiências -->
-                        <section class="informacaoPortifolio__experiencia">
-                            <h2>Experiências</h2>
-                            <h3>Titulo do Cargo</h3>
-                            <strong>Nome da empresa - brasil</strong>
-                            <p>Período de experiência na empresa</p>
-                        </section>
-
-                </div>
-
-            </div>
-
         </div>
-
     </main>
     <!-- Rodapé -->
     <footer>
